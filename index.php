@@ -57,6 +57,7 @@ $seconds = microtime() - $seconds;
 echo "Простой наибольший делитель числа " . $number . " = " . $numbersDoublyList->top() . "<br>";
 echo "Программа работала " . $seconds . " секунд";
 
+
 echo "<h2>Task 3</h2>";
 if (isset($_GET["path"]) && is_dir($_GET["path"]) && $_GET["path"] !== '.') {
     $path = $_GET["path"];
