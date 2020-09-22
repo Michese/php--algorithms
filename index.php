@@ -74,7 +74,7 @@ while ($directoryIt->valid()) {
         if ($directoryIt == '.') {
             echo "<a href='?path=./'> Корневая папка </a><br>";
         } else {
-            $oldPath = preg_replace("/[\\d\\w^\/]*$/", "", $directoryIt->getPath());
+            $oldPath = preg_replace("/\\\[\\d\\w^\/]*$/", "", $directoryIt->getPath());
             echo "<a href='?path=" . $oldPath . "'> Вернуться </a><br>";
         }
     } else {
